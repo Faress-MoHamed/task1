@@ -12,23 +12,53 @@
 		<title>task 2</title>
 		<script>
 			document.addEventListener("DOMContentLoaded", () => {
+				// Select elements
 				const video = document.querySelector("video");
 				const playButton = document.getElementById("playButton");
+				const img1 = document.getElementById("img1");
+				const video2 = document.getElementById("video2");
+				const playButton2 = document.getElementById("playButton2");
+				const img2 = document.getElementById("img2");
 
+				// Play Button for First Video
 				playButton.addEventListener("click", () => {
 					if (video.paused) {
 						video.play();
 						playButton.classList.add("hidden");
+						img1.classList.add("hidden");
 					}
 				});
 
 				video.addEventListener("pause", () => {
 					playButton.classList.remove("hidden");
+					img1.classList.remove("hidden");
 				});
 
 				video.addEventListener("play", () => {
 					playButton.classList.add("hidden");
+					img1.classList.add("hidden");
 				});
+
+				// Play Button for Second Video
+				if (playButton2 && video2 && img2) {
+					playButton2.addEventListener("click", () => {
+						if (video2.paused) {
+							video2.play();
+							playButton2.classList.add("hidden");
+							img2.classList.add("hidden");
+						}
+					});
+
+					video2.addEventListener("pause", () => {
+						playButton2.classList.remove("hidden");
+						img2.classList.remove("hidden");
+					});
+
+					video2.addEventListener("play", () => {
+						playButton2.classList.add("hidden");
+						img2.classList.add("hidden");
+					});
+				}
 			});
 		</script>
 		<!-- Import Google Fonts -->
@@ -118,10 +148,10 @@
 						</div>
 					</div>
 
-					<div class="">
+					<div class="relative">
 						<div
 							id="playButton"
-							class="playButton py-[25px] px-[27px] border-[2px] border-white rounded-full absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 w-[80px] h-[80px] flex items-center justify-center"
+							class="playButton py-[25px] px-[27px] border-[2px] border-white rounded-full absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 w-[80px] h-[80px] z-10 flex items-center justify-center"
 						>
 							<svg
 								width="24"
@@ -136,7 +166,12 @@
 								/>
 							</svg>
 						</div>
-
+						<img
+							id="img1"
+							src="./img/backgroundtest.jpg"
+							class="absolute z-1 w-[967px] h-[329px] rounded-xl"
+							alt=""
+						/>
 						<video
 							controls
 							class="rounded-[24px] w-[967px] h-[329px] shadow-2xl -mt-2/4"
@@ -153,8 +188,8 @@
 						<!-- Video Section -->
 						<div class="relative md:w-[609px] md:h-[405px]">
 							<div
-								id="playButton"
-								class="playButton py-[25px] px-[27px] border-[2px] border-white rounded-full absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 w-[80px] h-[80px] flex items-center justify-center"
+								id="playButton2"
+								class="playButton py-[25px] px-[27px] border-[2px] border-white rounded-full absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 w-[80px] h-[80px] z-[10] flex items-center justify-center"
 							>
 								<svg
 									width="24"
@@ -169,9 +204,15 @@
 									/>
 								</svg>
 							</div>
-
+							<img
+								id="img2"
+								src="./img/backgroundtest.jpg"
+								class="absolute z-1 w-[967px] h-[329px] rounded-xl"
+								alt=""
+							/>
 							<video
 								controls
+								id="video2"
 								class="rounded-[24px] w-[967px] h-[329px] shadow-2xl -mt-2/4"
 								src="/img/SignUp.mp4"
 								alt="Demo Video"
