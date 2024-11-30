@@ -10,7 +10,27 @@
 		<meta name="keywords" content="task, services, experience, YouTube" />
 		<meta name="author" content="Your Name" />
 		<title>task 2</title>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const video = document.querySelector("video");
+				const playButton = document.getElementById("playButton");
 
+				playButton.addEventListener("click", () => {
+					if (video.paused) {
+						video.play();
+						playButton.classList.add("hidden");
+					}
+				});
+
+				video.addEventListener("pause", () => {
+					playButton.classList.remove("hidden");
+				});
+
+				video.addEventListener("play", () => {
+					playButton.classList.add("hidden");
+				});
+			});
+		</script>
 		<!-- Import Google Fonts -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
@@ -99,6 +119,24 @@
 					</div>
 
 					<div class="">
+						<div
+							id="playButton"
+							class="playButton py-[25px] px-[27px] border-[2px] border-white rounded-full absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 w-[80px] h-[80px] flex items-center justify-center"
+						>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 17 17"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M3.48122 0.752701C2.1865 0.0712866 0.5 0.848042 0.5 2.12577V14.8742C0.5 16.152 2.1865 16.9287 3.48122 16.2473L15.5926 9.87307C16.8025 9.23631 16.8025 7.76369 15.5926 7.12693L3.48122 0.752701Z"
+									fill="white"
+								/>
+							</svg>
+						</div>
+
 						<video
 							controls
 							class="rounded-[24px] w-[967px] h-[329px] shadow-2xl -mt-2/4"
@@ -114,9 +152,27 @@
 					>
 						<!-- Video Section -->
 						<div class="relative md:w-[609px] md:h-[405px]">
+							<div
+								id="playButton"
+								class="playButton py-[25px] px-[27px] border-[2px] border-white rounded-full absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 w-[80px] h-[80px] flex items-center justify-center"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 17 17"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M3.48122 0.752701C2.1865 0.0712866 0.5 0.848042 0.5 2.12577V14.8742C0.5 16.152 2.1865 16.9287 3.48122 16.2473L15.5926 9.87307C16.8025 9.23631 16.8025 7.76369 15.5926 7.12693L3.48122 0.752701Z"
+										fill="white"
+									/>
+								</svg>
+							</div>
+
 							<video
 								controls
-								class="rounded-[8px]"
+								class="rounded-[24px] w-[967px] h-[329px] shadow-2xl -mt-2/4"
 								src="/img/SignUp.mp4"
 								alt="Demo Video"
 							></video>
