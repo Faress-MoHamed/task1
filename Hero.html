@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="This is a task showcasing our experiences and services."
+		/>
+		<meta name="keywords" content="task, services, experience, YouTube" />
+		<meta name="author" content="Your Name" />
+		<title>task 2</title>
+
+		<!-- Import Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#da373d",
+						},
+						fontFamily: {
+							zain: ["Zain", "sans-serif"],
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body dir="rtl">
+		<main class="font-zain">
+			<div class="container mx-auto py-2 px-4 md:space-y-0 space-y-10">
+				<section
+					class="f-section min-h-[50vh] font-zain flex justify-center text-center bg-no-repeat bg-cover flex flex-col justify-center items-center gap-[24px]"
+				>
+					<div class="w-full flex justify-center items-center">
+						<img
+							src="/img/background.svg"
+							class="absolute pt-8 w-full h-full md:block hidden z-[-1]"
+							alt="Background Image"
+						/>
+						<div
+							class="flex flex-col justify-center items-center w-[716px] gap-[32px]"
+						>
+							<!-- Main Header -->
+							<p class="font-[800] leading-[40px] text-[32px]">
+								<span class="text-[#2778C0]">شاهد تجاربنا</span> واقترب اكثر من
+								عالمنا
+							</p>
+
+							<!-- Secondary Header -->
+							<p class="text-[#747474] leading-[24px] w-[74%]">
+								انضم إلينا على قناتنا في يوتيوب لمشاهدة أحدث العروض والنصائح،
+								وتجارب القيادة الحقيقية. استمتع بمحتوى ملهم يساعدك على اتخاذ
+								القرار الأفضل
+							</p>
+
+							<div class="flex justify-between items-center gap-[24px]">
+								<a
+									href="#contact"
+									class="py-[16px] px-[23px] w-[150px] h-[50px] text-white leading-[64px] font-[700] bg-[#2778C0] md:hover:bg-[#2778C0]/80 md:duration-200 text-center rounded-[8px] flex items-center justify-center cursor-pointer"
+								>
+									تواصل معنا
+								</a>
+
+								<a
+									href="#more"
+									class="text-[#2778C0] leading-[64px] font-[700] flex items-center gap-[8px] md:hover:text-[#2778C0]/80 md:duration-200"
+								>
+									عرض المزيد
+									<svg
+										width="8"
+										height="12"
+										viewBox="0 0 8 12"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M6.79062 1.23017C7.07772 1.52875 7.06841 2.00353 6.76983 2.29063L2.83208 6L6.76983 9.70938C7.06841 9.99647 7.07772 10.4713 6.79062 10.7698C6.50353 11.0684 6.02875 11.0777 5.73017 10.7906L1.23017 6.54063C1.08311 6.39922 0.999999 6.20401 0.999999 6C0.999999 5.79599 1.08311 5.60078 1.23017 5.45938L5.73017 1.20938C6.02875 0.922281 6.50353 0.931591 6.79062 1.23017Z"
+											fill="#2778C0"
+											stroke="#2778C0"
+											stroke-width="0.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="">
+						<video
+							controls
+							class="rounded-[24px] w-[967px] h-[329px] shadow-2xl -mt-2/4"
+							src="/img/SignUp.mp4"
+							alt="Demo Video"
+						></video>
+					</div>
+				</section>
+
+				<section class="min-h-[80vh] flex items-center">
+					<div
+						class="flex flex-col md:flex-row items-center justify-between gap-8 w-full"
+					>
+						<!-- Video Section -->
+						<div class="relative md:w-[609px] md:h-[405px]">
+							<video
+								controls
+								class="rounded-[8px]"
+								src="/img/SignUp.mp4"
+								alt="Demo Video"
+							></video>
+						</div>
+						<!-- Text Content -->
+						<div
+							class="md:w-1/2 text-right flex flex-col gap-[24px] justify-center"
+						>
+							<h1
+								class="md:text-[40px] text-[30px] font-bold text-[#232323] leading-[56px]"
+							>
+								مرحباً بك في وجهتك المثالية
+							</h1>
+							<p class="text-[16px] text-[#6C6D6E] leading-[24px] md:w-[414px]">
+								نحن هنا لنقدم لك الأفضل في كل جانب من جوانب تجربتك، مع جودة لا
+								تُضاهى وخدمات متميزة
+							</p>
+							<button
+								class="bg-[#2778C0] md:hover:bg-[#2778C0]/80 md:duration-200 text-white font-semibold py-[6px] px-[44px] w-[150px] h-[50px] rounded-lg transition duration-300"
+							>
+								حمل الآن
+							</button>
+							<!-- Features Bar -->
+							<div class="mt-12 bg-[#DFEBF6] rounded-xl py-3 px-1 text-[12px]">
+								<div
+									class="flex md:flex-row flex-col w-full justify-between items-start gap-4 text-center"
+								>
+									<div class="flex items-center justify-center gap-[8px]">
+										<span
+											class="w-[40px] h-[40px] bg-[#FFFFFF] flex items-center justify-center rounded-full"
+										>
+											<svg
+												width="24"
+												height="25"
+												viewBox="0 0 24 25"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M19.5 6.15039H4.5C3.67157 6.15039 3 6.82196 3 7.65039V18.1504C3 18.9788 3.67157 19.6504 4.5 19.6504H19.5C20.3284 19.6504 21 18.9788 21 18.1504V7.65039C21 6.82196 20.3284 6.15039 19.5 6.15039Z"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M3 12.1504H8.325C8.49773 12.1494 8.66535 12.2089 8.79889 12.3185C8.93242 12.428 9.02346 12.5808 9.05625 12.7504C9.19948 13.425 9.57002 14.0298 10.1059 14.4639C10.6417 14.8979 11.3104 15.1347 12 15.1347C12.6896 15.1347 13.3583 14.8979 13.8941 14.4639C14.43 14.0298 14.8005 13.425 14.9437 12.7504C14.9765 12.5808 15.0676 12.428 15.2011 12.3185C15.3346 12.2089 15.5023 12.1494 15.675 12.1504H21"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M3 9.2998H21"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</span>
+
+										<span class="text-gray-700">الدفع آمن بنسبة 100%</span>
+									</div>
+									<div class="flex items-center justify-center gap-[8px]">
+										<span
+											class="w-[40px] h-[40px] bg-[#FFFFFF] flex items-center justify-center rounded-full"
+										>
+											<svg
+												width="24"
+												height="25"
+												viewBox="0 0 24 25"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M21.1406 12.5003H18.1406C17.7428 12.5003 17.3613 12.6583 17.08 12.9397C16.7987 13.221 16.6406 13.6025 16.6406 14.0003V17.7503C16.6406 18.1481 16.7987 18.5297 17.08 18.811C17.3613 19.0923 17.7428 19.2503 18.1406 19.2503H19.6406C20.0384 19.2503 20.42 19.0923 20.7013 18.811C20.9826 18.5297 21.1406 18.1481 21.1406 17.7503V12.5003ZM21.1406 12.5003C21.1407 11.3121 20.9054 10.1356 20.4484 9.03875C19.9915 7.9419 19.3218 6.9464 18.4781 6.10969C17.6344 5.27297 16.6334 4.61161 15.5328 4.16375C14.4322 3.71589 13.2538 3.49041 12.0656 3.50031C10.8782 3.49165 9.70083 3.71805 8.60132 4.16647C7.5018 4.61488 6.50189 5.27645 5.6592 6.11304C4.81651 6.94963 4.1477 7.94471 3.69131 9.04094C3.23492 10.1372 2.99997 11.3129 3 12.5003V17.7503C3 18.1481 3.15804 18.5297 3.43934 18.811C3.72064 19.0923 4.10218 19.2503 4.5 19.2503H6C6.39782 19.2503 6.77936 19.0923 7.06066 18.811C7.34196 18.5297 7.5 18.1481 7.5 17.7503V14.0003C7.5 13.6025 7.34196 13.221 7.06066 12.9397C6.77936 12.6583 6.39782 12.5003 6 12.5003H3"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M21.1406 17.75V20C21.1406 20.7956 20.8246 21.5587 20.2619 22.1213C19.6993 22.6839 18.9363 23 18.1406 23H12.75"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</span>
+
+										<span class="text-gray-700"
+											>دعم مخصص على مدار الساعة طوال أيام الأسبوع</span
+										>
+									</div>
+									<div class="flex items-center justify-center gap-[8px]">
+										<span
+											class="w-[40px] h-[40px] bg-[#FFFFFF] flex items-center justify-center rounded-full"
+										>
+											<svg
+												width="24"
+												height="25"
+												viewBox="0 0 24 25"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M16.5 8.00002H20.4938C20.6432 7.99904 20.7894 8.04329 20.9132 8.12695C21.037 8.21061 21.1326 8.32977 21.1875 8.46877L22.5 11.75"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M1.5 14H16.5"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M17.625 20.75C18.8676 20.75 19.875 19.7426 19.875 18.5C19.875 17.2574 18.8676 16.25 17.625 16.25C16.3824 16.25 15.375 17.2574 15.375 18.5C15.375 19.7426 16.3824 20.75 17.625 20.75Z"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-miterlimit="10"
+												/>
+												<path
+													d="M6.375 20.75C7.61764 20.75 8.625 19.7426 8.625 18.5C8.625 17.2574 7.61764 16.25 6.375 16.25C5.13236 16.25 4.125 17.2574 4.125 18.5C4.125 19.7426 5.13236 20.75 6.375 20.75Z"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-miterlimit="10"
+												/>
+												<path
+													d="M15.375 18.5H8.625"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M4.125 18.5H2.25C2.05109 18.5 1.86032 18.421 1.71967 18.2803C1.57902 18.1397 1.5 17.9489 1.5 17.75V7.25C1.5 7.05109 1.57902 6.86032 1.71967 6.71967C1.86032 6.57902 2.05109 6.5 2.25 6.5H16.5V16.55"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M16.5 11.75H22.5V17.75C22.5 17.9489 22.421 18.1397 22.2803 18.2803C22.1397 18.421 21.9489 18.5 21.75 18.5H19.875"
+													stroke="#2778C0"
+													stroke-width="1.5"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</span>
+
+										<span class="text-gray-700">التوصيل مجاني لمدة 30 يوم</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
